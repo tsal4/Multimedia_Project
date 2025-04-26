@@ -8,8 +8,11 @@ Created on Mon Apr  7 20:38:50 2025
 import cv2
 import numpy as np
 
+#import image
 image = cv2.imread('image4.jpg')
 
-blurred = cv2.GaussianBlur(image, (15,15), 0)
+#transform image
+blurred = cv2.GaussianBlur(image, (20,20), 0)
 
+#save image
 cv2.imwrite("blurred.jpg", blurred)
