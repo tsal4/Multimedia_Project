@@ -26,7 +26,7 @@ hed = cv2.resize(hed, (W, H))
 hed = (255 * hed).astype("uint8") #output
 
 #apply threshold (optional)
-#threshold_value = 30  #between 30-100
+#threshold_value = 30  #between 0-255
 #_, edge_thresh = cv2.threshold(hed, threshold_value, 255, cv2.THRESH_BINARY)
 
 #save output
