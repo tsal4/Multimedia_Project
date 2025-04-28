@@ -12,7 +12,7 @@ import numpy as np
 image = cv2.imread('image4.jpg')
 
 #transform image
-blurred = cv2.GaussianBlur(image, (20,20), 0)
+blurred = cv2.GaussianBlur(image, (21,21), 0) #heavy blur
 
 #save image
 cv2.imwrite("blurred.jpg", blurred)
